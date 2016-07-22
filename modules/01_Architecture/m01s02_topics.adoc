@@ -7,6 +7,7 @@
 * Six design principles for architecting Gluster clusters
 * Reference architecture performance charts
 * Sample optimized hardware configurations
+* Supported Virtual Platforms
 * Subsystem sizing guidelines
 
 ifdef::showscript[]
@@ -20,6 +21,7 @@ As such, this module covers the following topics:
 * Six design principles for architecting Gluster clusters
 * Performance considerations with Gluster
 * Sample optimized hardware configurations
+* Supported Virtual Platforms
 * Subsystem sizing guidelines
 
 endif::showscript[]
