@@ -1,0 +1,21 @@
+:scrollbar:
+
+
+
+== Optimized for Cost and Capacity
+
+* CapEx: Lowest $/TB 
+* OpEx: Lowest BTU/TB 
+* OpEx: Lowest watt/TB 
+* OpEx: Highest TB/Rack-unit 
+* Minimum server-fault domain _recommendation_ (1 server is <15% cluster)
+
+ifdef::showscript[]
+
+=== Transcript
+
+Using the term "cost/capacity-optimized" means the cluster is designed to achieve the lowest overall cost per terabyte of usable capacity, as well as the lowest power and cooling costs per usable terabyte.
+
+Some data center costs are calculated by floor space, so also look for configurations that offer highest usable terabytes per rack-unit. As cost-capacity clusters typically have more relaxed performance requirements, minimum server fault-domain recommendations for ability to retain quorum with a single server failure. 
+
+endif::showscript[]

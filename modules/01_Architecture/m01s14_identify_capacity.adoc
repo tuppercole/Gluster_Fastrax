@@ -1,0 +1,15 @@
+:scrollbar:
+
+
+
+== Identify Capacity
+
+image::images/target_cluster_hardware.png[]
+
+ifdef::showscript[]
+
+=== Transcript
+
+Returning to the matrix, place the desired target capacity at the top. This fourth design consideration may seem trivial, but it can clearly have an effect on the choice for server architecture. For example, if the customer wants to build a small, half-petabyte cluster, minimum server fault-domain recommendations preclude the use of ultra-dense storage servers.  
+
+endif::showscript[]

@@ -1,0 +1,35 @@
+:scrollbar:
+
+
+
+== Fault-Domain Risk Tolerance 
+
+* During recovery from a server failure in a cluster with fewer nodes:
+** Workload performance degrades 
+** Larger % of cluster’s reserve storage capacity used
+* Guidelines: 
+
+[cols="1,2"]
+|===
+|Cluster Type |Minimum Recommended Number of Nodes
+| Distributed or Replicated Volumes | 2 nodes/cluster
+| Distributed and Replicated  Volumes|  4  nodes/cluster (Best for redundency and performance) 
+| Erasure Coded Volumes | 6 nodes/cluster (best capacity is traded off by overhead- good ues for archival workload)
+|===
+
+ifdef::showscript[]
+
+=== Transcript
+
+The fifth design consideration is determining the customer’s storage needs and risk tolerance.    
+
+The best performance and capacity comes from Gluster Distributed volumes. This can be a good solution for a customer interested in scale out storage, and who has no need for data protection through redundency. 
+
+Replicated volumes can be used to provide hardware fault tolerance via redundency. This can be a good solution for a set amount of data that will not need to scale out in the future. 
+
+A good balance is to use Gluster replicated and Distributed volumes. The result is multiple copies of customer data distributed among multiple servers to distribute workload and increase capacity.
+
+Erasure coding is an advanced data protection mechanism that reconstructs corrupted or lost data by using information about the data that’s stored elsewhere in the storage system. The additional overhead in calculating parity makes this a poor choice for performance sensitive applications. 
+
+
+endif::showscript[]

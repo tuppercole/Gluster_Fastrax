@@ -1,0 +1,17 @@
+:scrollbar:
+
+
+
+== Optimized Write Throughput
+
+image::images/solutions_page_24.png[]
+* Image source: http://www.redhat.com/en/resources/red-hat-ceph-storage-clusters-supermicro-storage-servers 
+
+
+ifdef::showscript[]
+
+=== Transcript
+
+This chart shows write price/performance versus read price/performance on the previous slide. Here, the configuration with 12x4T OSDs with one PCIe write journal and the configuration with 36x4T OSDs with two PCIe write journals offered similar price/performance. This study also illustrates the positive effect that dedicated flash write journals have on sequential write price/performance.  
+
+endif::showscript[]

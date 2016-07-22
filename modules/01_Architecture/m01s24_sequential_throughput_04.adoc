@@ -1,0 +1,18 @@
+:scrollbar:
+
+
+
+== Sequential Write Throughput
+
+image::images/solutions_page_22.png[]
+
+* Image source: http://www.redhat.com/en/resources/red-hat-ceph-storage-clusters-supermicro-storage-servers 
+
+
+ifdef::showscript[]
+
+=== Transcript
+
+The fourth graph here shows sequential write throughput per OSD from an erasure-coded pool versus the 3x replicated pool in the previous graph. Most of these configurations used a 3+2 erasure-coding scheme, meaning that each block written was encoded into three data chunks and two parity chunks. As a result, every 1MB write issued by the client workload resulted in only 1.4MB written by the storage cluster. This explains why sequential write throughput is generally higher when using an erasure-coded pool versus a 3x replicated pool. The back-end storage cluster is simply writing about half the amount of data. Thus, some write-heavy object storage workloads may experience greater throughput performance on erasure-coded pools than on replicated pools at much less cost.
+
+endif::showscript[]

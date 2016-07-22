@@ -1,0 +1,20 @@
+:scrollbar:
+
+
+
+== Data Protection Schemes
+
+_One of the biggest choices affecting TCO in the entire solution!_
+
+* Replication 
+* Erasure Coding
+
+ifdef::showscript[]
+
+=== Transcript
+
+The sixth and final design consideration is data protection. Gluster offers two data protection schemes: replication and erasure coding, which is analogous to network RAID. In erasure coding, data is encoded into _k_ chunks with _m_ parity chunks and spread across different disks, usually on different servers. Erasure coding can tolerate _m_ disk failures without data loss. Red Hat supports 8+3, 8+4 and 4+2 configurations.
+
+The data protection scheme design can affect the solution's TCO more than any other factor. This is due to the amount of raw storage capacity that must be purchased to yield the desired amount of usable storage capacity, and the cost of disks and media is the most expensive component of the Gluster storage solution.
+
+endif::showscript[]

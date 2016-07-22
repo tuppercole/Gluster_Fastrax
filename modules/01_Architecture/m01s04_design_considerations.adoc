@@ -1,0 +1,29 @@
+:scrollbar:
+
+
+
+== Design Considerations
+
+1. Determine need for scale-out storage 
+2. Design for target workload I/O profiles 
+3. Choose storage access methods 
+4. Qualify storage capacity 
+5. Determine fault-domain risk tolerance 
+6. Select data protection method
+
+ifdef::showscript[]
+
+=== Transcript
+
+When you begin discussing the best design for the Gluster server cluster with your customer, shape the conversation around these six key design considerations:
+
+These design considerations include: 
+
+1. Determine need for scale-out storage 
+2. Design for target workload I/O profiles 
+3. Choose storage access  
+4. Qualify storage capacity 
+5. Determine their tolerance for fault-domain risk 
+6. Select the data protection method
+
+endif::showscript[]

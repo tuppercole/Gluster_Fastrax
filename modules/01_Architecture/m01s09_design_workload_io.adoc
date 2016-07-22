@@ -1,0 +1,28 @@
+:scrollbar:
+
+
+
+== Design for Workload I/O
+
+* Performance versus "cheap-and-deep" 
+* Throughput versus IOPS 
+* Small versus large block 
+* Sequential versus random 
+* Read versus write mix 
+* Absolute latency versus consistent targets 
+* Sync versus async
+
+ifdef::showscript[]
+
+=== Transcript
+
+Designing the target workload I/O profile is the second and perhaps the most crucial consideration to discuss with your customers.
+
+First, you need to evaluate whether they require their storage to meet specific performance targets, or whether they are mostly interested in low-cost, archive storage -- the "cheap-and-deep" solution. One of the best indications of their needs is how frequently in your conversation they use the terms dollars per terabyte, IOPS, throughput, or latency. If lowest dollars per terabyte is the overriding need, they can design a Gluster cluster architecture at dramatically lower costs. Customers can tailor their hardware purchase to their requirements, insuring they get the right capacity and performance for their needs. 
+
+If their needs are performance-oriented, you should determine whether they are trying to optimize for IOPS or throughput. High-throughput workloads are frequently characterized by large-block, asynchronous, sequential IO (for example, 1M sequential I/O). High-IOPS workloads are frequently characterized by small-block, synchronous-random I/O (for example, 4K random I/O). Gluster does not perform well with high-throughput workloads and is not recommended for high IOPS environments.    
+
+
+Additionally, understanding the workload read/write mix can affect architecture decisions. For example, erasure-coded pools can perform better than replicated pools for sequential writes, but replicated pools perform better for sequential reads. So, a write-mostly object-archive workload such as video-surveillance archival may perform nearly as well on erasure-coded pools as on replicated pools, but at significantly lower cost. 
+
+endif::showscript[]

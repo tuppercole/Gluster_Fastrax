@@ -1,0 +1,15 @@
+:scrollbar:
+
+
+
+== Target Cluster Hardware
+
+image::images/target_cluster_hardware.png[]
+
+ifdef::showscript[]
+
+=== Transcript
+
+With these six design principles, an architect can use this 4x3 matrix to help identify optimal configurations for different cluster sizes and workload categories.
+
+endif::showscript[]

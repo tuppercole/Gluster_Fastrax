@@ -1,0 +1,17 @@
+:scrollbar:
+
+
+== Data Protection Schemes
+
+* Replication 
+** 3x replication over JBOD = 33% usable:raw capacity ratio
+* Erasure Coding
+** 8+3 over JBOD = 73% usable:raw capacity ratio
+
+ifdef::showscript[]
+
+=== Transcript
+
+For example, 3x replication yields a 33% usable storage ratio. But an 8+3 erasure-coded pool, yields a 73% usable storage ratio. Given the high cost of disks and media, this makes erasure-coding a much more economical alternative to replication.
+  
+endif::showscript[]

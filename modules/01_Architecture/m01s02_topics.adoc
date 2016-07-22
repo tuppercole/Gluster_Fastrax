@@ -1,0 +1,25 @@
+:scrollbar:
+
+
+
+== Module Topics
+
+* Six design principles for architecting Gluster clusters
+* Reference architecture performance charts
+* Sample optimized hardware configurations
+* Subsystem sizing guidelines
+
+ifdef::showscript[]
+
+=== Transcript
+
+Gluster is a leading software-defined storage system that is popular for building large, distributed storage solutions for media streaming, data analysis, and other data- and bandwidth-intensive tasks. This module discusses six key design principles for architecting a Gluster server cluster to best fit your customer’s needs. Reference architecture examples then show how various configurations perform in terms of throughput and cost. A final table summarizes a number of optimized configurations based on specific criteria.
+
+As such, this module covers the following topics:
+
+* Six design principles for architecting Gluster clusters
+* Performance considerations with Gluster
+* Sample optimized hardware configurations
+* Subsystem sizing guidelines
+
+endif::showscript[]

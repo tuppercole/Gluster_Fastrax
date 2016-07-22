@@ -1,0 +1,19 @@
+:scrollbar:
+
+
+
+== Subsystem Guidelines
+
+* Server chassis size 
+* CPU 
+* Memory 
+* Disk 
+* Network
+
+ifdef::showscript[]
+
+=== Transcript
+
+For further assistance in architecting Gluster solutions you can find guidelines for sizing the following subsystems in Red Hat's public reference architectures. For details on sizing these subsystems within Gluster clusters, see the _Red Hat Gluster Storage: Compatible Physical, Virtual Server and Client OS Platforms_ guide. You can find additional discussion about these sizing guidelines in public reference architectures, such as the references listed on the next slide.
+
+endif::showscript[]

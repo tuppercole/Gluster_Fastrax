@@ -1,0 +1,23 @@
+:scrollbar:
+
+
+
+== Optimized for Performance
+
+* Highest performance (MB/sec or IOPS) 
+* CapEx: Lowest $/performance-unit 
+* OpEx: Highest performance/BTU 
+* OpEx: Highest performance/watt 
+* Minimum server fault-domain _recommendation_ (1 server is <10% cluster)
+
+ifdef::showscript[]
+
+=== Transcript
+
+The terms "IOPS-optimized" or "throughput-optimized" mean the cluster is designed to meet certain performance criteria: 
+
+Highest overall performance, in megabytes per second or IOPS, comes first. A customer conscious of the capital expense for that performance will also look for configurations that offer the lowest cost per unit of performance. Because operating expenses can be a substantial part of TCO, in addition they look for what offers the highest performance per BTU or watt or both.
+
+Finally, the cluster design must consider minimum server fault-domain recommendations. The recommendation performance-optimized clusters is that no single server failure cause a quorum failure. 
+
+endif::showscript[]

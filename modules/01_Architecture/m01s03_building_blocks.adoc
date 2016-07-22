@@ -1,0 +1,15 @@
+:scrollbar:
+
+
+
+== Building Blocks
+
+image::images/gluster_building_blocks.png[]
+
+ifdef::showscript[]
+
+=== Transcript
+
+One of the key benefits of a Gluster-based software-defined storage is that it can run on many hardware configurations. As a result, one of the most frequently asked questions customers ask is: "What do you recommend?" As a successful solution architect, you know designing solutions requires a great deal of interaction with your clients. The next sections provide six key design considerations to help you shape Gluster cluster server and network architectures. Each of these is intended to be a conversation between you and your customer.   
+
+endif::showscript[]

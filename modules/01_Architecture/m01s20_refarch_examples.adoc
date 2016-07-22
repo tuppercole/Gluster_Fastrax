@@ -1,0 +1,30 @@
+:scrollbar:
+
+
+== Reference Architecture Examples
+
+* Performance increases linearly with number of nodes.
+* Gluster performance is related to file size- small IO is not a recommended workload. 
+* Gluster performance relies greatly on the underlying hardware. 
+
+High Performance Computing use-case
+
+2u/24 (JBODs may be attached)
+15000 RPM 900GB drives(2.5" inch SAS) OR Solid state disks.
+Minimum RAM 48 GB
+General Purpose File Serving use-case
+
+2u/12 (JBODs may be attached)
+7200 or 10000 RPM, up to 6 TB drives (3.5" SAS or SATA)
+Minimum RAM 32 GB
+Archival use-case
+
+4u/60 (JBODs may be attached)
+7200 or 10000 RPM, up to 6 TB drives (3.5" SAS or SATA)
+Minimum RAM 16 GB
+
+
+ifdef::showscript[]
+
+
+endif::showscript[]

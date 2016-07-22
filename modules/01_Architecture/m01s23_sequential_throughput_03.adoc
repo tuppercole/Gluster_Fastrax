@@ -1,0 +1,17 @@
+:scrollbar:
+
+
+
+== Sequential Write Throughput
+
+image::images/solutions_page_21.png[]
+* Image source: http://www.redhat.com/en/resources/red-hat-ceph-storage-clusters-supermicro-storage-servers 
+
+
+ifdef::showscript[]
+
+=== Transcript
+
+This slide also shows throughput per OSD, but shows sequential write results versus sequential read results. Note that from a client workload perspective, write throughput shown here is roughly one-third that of read throughput. The storage pools in this experiment were configured with three replicas, such that every 1MB write issued by the client workload resulted in 3MBs written by the storage cluster.  In other words, these 3x replicated pools are doing roughly the same amount of back-end I/O throughput for either 100% sequential reads or 100% sequential writes, due to replication write amplification. 
+
+endif::showscript[]

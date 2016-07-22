@@ -1,0 +1,18 @@
+:scrollbar:
+
+
+== Data Protection Schemes
+
+* Replication 
+** Gluster file storage default: 2x replication over RAID6 bricks.
+
+* Erasure Coding
+** Erasure coding provides failure protection beyond just single/double component failure and consumes less space than replication.
+
+ifdef::showscript[]
+
+=== Transcript
+
+Gluster storage can support any size replication scheme and can be stretched across LAN or WAN topologies with Gluster geo-replication. Depending upon the performance needs and read/write mix of an object storage workload, an erasure-coded volume can provide an extremely cost-effective solution while meeting performance requirements.  
+
+endif::showscript[]

@@ -1,0 +1,14 @@
+:scrollbar:
+
+
+== Designed for Agility
+
+image::images/solutions_page_06.png[]
+
+ifdef::showscript[]
+
+=== Transcript
+
+This illustration says it all: Scale-up storage is monolithic, but scale-out storage is agile and flexible.
+
+endif::showscript[]

@@ -1,0 +1,29 @@
+:scrollbar:
+
+
+
+== Sequential Read Throughput
+
+image::images/solutions_page_19.png[]
+* Image source: http://www.redhat.com/en/resources/red-hat-ceph-storage-clusters-supermicro-storage-servers 
+
+
+ifdef::showscript[]
+
+=== Transcript
+
+The graphs on the following four slides show performance figures for specific configurations (nine in graphics 1-3, 10 in graph 4). The the x-axis represents I/O size, while the y-axis displays throughput in megabytes per second.
+
+Each line in the graph represents performance of a specific configuration. Each configuration is listed in short-hand notation in the legend on the right-hand side. 
+
+For example, the configuration at the top of the legend in this graph is listed as 12+1, 10G+10G. This means 12 OSDs on HDDs plus one dedicated write journal on flash, running on separate client-facing and cluster-facing 10G networks. 
+
+This first graph shows the sequential read throughput per server. Some conclusions to draw from this graph are:
+
+* The server configurations with more than 12 bays are limited by network bandwidth when doing large sequential I/O. Note that at the 4096 I/O size, server I/O based on 10G networks never rises above 1100 megabytes per second, which is about the available bandwidth of a 10 gigabit network.  
+
+* The I/O bandwidth of 12-bay server configurations is fairly well matched to the bandwidth of 10G networks. Note that at the 4096 I/O size, the 12+1 line is not limited by network bandwidth. 
+
+* Finally, note that generally, server configurations with more OSDs on 40G networks provide more Ceph throughput than servers with fewer OSDs on 10G networks.
+
+endif::showscript[]

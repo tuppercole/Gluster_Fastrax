@@ -1,0 +1,34 @@
+:scrollbar:
+
+
+
+== Scale-Out Factors
+
+* Elastic provisioning across storage server cluster 
+* Standardized servers and networking 
+* Petabyte scale 
+* Data HA across "islands" of scale-up storage servers 
+* Performance and capacity scaled independently 
+* Incremental versus forklift upgrade
+
+ifdef::showscript[]
+
+=== Transcript
+
+Consideration 1: Qualifying the need for scale-out storage  
+
+Not every storage opportunity calls for scale-out storage. But if your customers bring up several of the following needs, they are probably good candidates for scale-out storage.  
+
+Do they need the ability to grow a single namespace storage pool over time, incrementally? 
+
+Do they want their storage cluster to be built on standard x86 servers instead of proprietary storage appliances?  
+
+Do they need to pool storage across tens of storage servers? If their requirements are only for 40 to 50 terabytes of storage across one to two workloads, but will need to scale out over time Gluster is a perfect choice.   
+
+Do they need to provide high availability of their data across storage "islands" in their storage cluster? Do they need to scale storage performance and capacity independently? (This, by the way, is how IDC defines scale-out storage). Frequently customers say scale-up storage appliances, such as a NetApp NAS, "run out of IOPS long before running out of capacity." It is easy to add more disk shelves to a dual-controller storage appliance, but hard to connect a number of such multiple appliances together to boost overall storage cluster performance.  
+
+Do they want to add storage performance or capacity incrementally by adding more storage servers or disks, instead of having to perform a forklift upgrade when their current dual-controller appliance runs out of performance or capacity?  
+
+Finally, if your customers are just looking for high-IOPS storage to run Oracle, they should probably continue using a Storage Area Network, or SAN. 
+
+endif::showscript[]
